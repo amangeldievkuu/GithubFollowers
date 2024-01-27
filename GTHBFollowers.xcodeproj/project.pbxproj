@@ -22,6 +22,7 @@
 		82A73FC22B584AC400B107BA /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A73FC12B584AC400B107BA /* UIViewController+Ext.swift */; };
 		D8BEF4A02B64DF8B00C0ACFB /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BEF49F2B64DF8B00C0ACFB /* Follower.swift */; };
 		D8BEF4A22B64E08700C0ACFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BEF4A12B64E08700C0ACFB /* User.swift */; };
+		D8BEF4A52B64E88D00C0ACFB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BEF4A42B64E88D00C0ACFB /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		82A73FC12B584AC400B107BA /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		D8BEF49F2B64DF8B00C0ACFB /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		D8BEF4A12B64E08700C0ACFB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8BEF4A42B64E88D00C0ACFB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,7 @@
 		8295B2422B503ED90003AF5D /* GTHBFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				8295B2432B503ED90003AF5D /* AppDelegate.swift */,
-				8295B2452B503ED90003AF5D /* SceneDelegate.swift */,
+				D8BEF4A32B64E86A00C0ACFB /* Managers */,
 				D8BEF49E2B64DF6E00C0ACFB /* Model */,
 				D8BEF49B2B64DBAF00C0ACFB /* Custom Views */,
 				D8BEF49A2B64DB4B00C0ACFB /* Screens */,
@@ -121,6 +122,8 @@
 		D8BEF49D2B64DC2C00C0ACFB /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				8295B2452B503ED90003AF5D /* SceneDelegate.swift */,
+				8295B2432B503ED90003AF5D /* AppDelegate.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -132,6 +135,14 @@
 				D8BEF4A12B64E08700C0ACFB /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D8BEF4A32B64E86A00C0ACFB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D8BEF4A42B64E88D00C0ACFB /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				82A73FBE2B58422100B107BA /* GFBodyLabel.swift in Sources */,
 				D8BEF4A02B64DF8B00C0ACFB /* Follower.swift in Sources */,
 				82A73FBC2B583E2900B107BA /* GFTitleLabel.swift in Sources */,
+				D8BEF4A52B64E88D00C0ACFB /* NetworkManager.swift in Sources */,
 				8299B7FE2B58350A00D06518 /* FollowerListVC.swift in Sources */,
 				8295B2462B503ED90003AF5D /* SceneDelegate.swift in Sources */,
 				8295B25E2B505D400003AF5D /* GFTextField.swift in Sources */,
@@ -377,6 +389,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -407,6 +420,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
